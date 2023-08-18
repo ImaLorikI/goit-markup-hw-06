@@ -16,30 +16,41 @@
             href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
             rel="stylesheet"
         />
-        <link rel="stylesheet" href="./css/styles.css" />
-
+        <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
+        <link rel="stylesheet" href="./css/styles_mobile.css" />
         <title>WebStudio</title>
     </head>
     <body>
         <header class="header">
-            <div class="container header-div">
+            <div class="container">
                 <nav class="header-nav">
-                    <a class="link-logo logo logo-header" href="./index.html">
-                        Web<span class="studio">Studio</span></a
+                    <a class="header-a" href="./index.html">
+                        Web<span class="header-span">Studio</span></a
                     >
-                    <ul class="list list-header">
+                     <button
+          class="menu-toggle js-open-menu header-button"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg width="32"
+            height="32" class="header-icon">
+          <use href="./images/icons.svg#menu">
+          </use>
+          </svg>
+        </button>
+                    <ul class="menu">
                         <li class="">
-                            <a class="link mainpage link-header" href="./index.html">Studio</a>
+                            <a class="" href="./index.html">Studio</a>
                         </li>
                         <li>
-                            <a class="link mainpage" href="./portfolio.html">Portfolio</a>
+                            <a class="" href="./portfolio.html">Portfolio</a>
                         </li>
                         <li>
-                            <a class="link mainpage" href="">Contacts</a>
+                            <a class="" href="">Contacts</a>
                         </li>
                     </ul>
                 </nav>
-                <address class="list adress">
+                <address class="list adress menu ">
                     <ul class="list adress-list">
                         <li>
                             <a class="link adress color-header" href="mailto:info@devstudio.com"
@@ -497,6 +508,76 @@
                 </form>
             </div>
         </div>
+         <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+                            <svg width="8" height="8" >
+                        <use href="./images/icons.svg#icon-close-black-18dp"></use>
+                    </svg>
+      </button>
+      <nav class="header-menu-nav">
+      <ul class="header-menu-ul">
+        <li><a href="./index.html" class="header-menu-a">Studio</a></li>
+        <li><a href="./portfolio.html" class="header-menu-a">Portfolio</a></li>
+        <li><a href="#" class="header-menu-a">Contacts</a></li>
+      </ul>
+      </nav>
+      <address class="header-nav">
+                    <ul class="header-menu-ul-addres">
+                        <li>
+                            <a class="header-addres-tel" href="tel:+110001111111"
+                                >+11 (000) 111-11-11</a
+                            >
+                        </li>
+                        <li>
+                            <a class="header-addres-gmail" href="mailto:info@devstudio.com"
+                                >info@devstudio.com</a
+                            >
+                        </li>
+                    </ul>
+                </address>
+                <ul class="header-menu-social-ul">
+                                    <li class="">
+                                        <a class="header-menu-link" href="#">
+                                            <svg class="header-menu-icon" width="24" height="24">
+                                                <use
+                                                    href="./images/icons.svg#icon-instagram-2"
+                                                ></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="">
+                                        <a class="header-menu-link" href="#">
+                                            <svg class="header-menu-icon" width="24" height="24">
+                                                <use
+                                                    href="./images/icons.svg#icon-twitter-1"
+                                                ></use></svg></a>
+                                    </li>
+                                    <li class="">
+                                        <a class="header-menu-link" href="#">
+                                            <svg class="header-menu-icon" width="24" height="24">
+                                                <use
+                                                    href="./images/icons.svg#icon-facebook-1"
+                                                ></use></svg></a>
+                                    </li>
+                                    <li class="">
+                                        <a class="header-menu-link" href="#">
+                                            <svg class="header-menu-icon" width="24" height="24">
+                                                <use
+                                                    href="./images/icons.svg#icon-linkedin-1"
+                                                ></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
+
+    </div>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
         <script src="./js/modal.js"></script>
+        <script src="./js/mobile-menu.js"></script>
     </body>
 </html>
