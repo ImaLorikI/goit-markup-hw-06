@@ -257,7 +257,7 @@ display: block;
 }
 .second-section-title{
     color: #2E2F42;
-text-align: start;
+text-align: center;
 font-size: 36px;
 font-style: normal;
 font-weight: 700;
@@ -732,6 +732,7 @@ background-color: #404BBF;
     .section{
             max-width: 768px;
     }
+    
     .fisrt-section-title{
         max-width: 496px;
     font-size: 56px;
@@ -742,6 +743,9 @@ background-color: #404BBF;
     }
     .second-section-li{
     flex-basis: calc((100% - 24px) / 2);
+    }
+    .second-section-title{
+        text-align: start;
     }
     .second-section-list{
         flex-direction: row;
